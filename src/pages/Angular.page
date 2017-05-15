@@ -1,0 +1,30 @@
+<apex:page doctype="html-5.0" 
+    controller="AngularController"
+    standardStylesheets="false" 
+    showChat="false" 
+    applyBodyTag="false" 
+    applyHtmlTag="false" 
+    showHeader="false" 
+    sidebar="false">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>SrcNg</title>
+            <base href="{! $page.Angular }"/>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        </head>
+        <body>
+            <app-root>Loading...</app-root>
+
+            <link rel="stylesheet" href="{!URLFOR($Resource.Angular, '/assets/bootstrap.css')}" />
+            <script type="text/javascript" src="{!URLFOR($Resource.Angular, 'inline.bundle.js')}"></script>
+            <script type="text/javascript" src="{!URLFOR($Resource.Angular, 'polyfills.bundle.js')}"></script>
+            <script type="text/javascript" src="{!URLFOR($Resource.Angular, 'styles.bundle.js')}"></script>
+            <script type="text/javascript" src="{!URLFOR($Resource.Angular, 'vendor.bundle.js')}"></script>
+            <script type="text/javascript" src="{!URLFOR($Resource.Angular, 'main.bundle.js')}"></script>
+
+        </body>
+    </html>
+</apex:page>
